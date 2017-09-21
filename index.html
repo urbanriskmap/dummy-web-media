@@ -20,7 +20,7 @@
       // Draw the video frame to the canvas.
       context.drawImage(player, 0, 0, canvas.width, canvas.height);
       var image = canvas.toDataURL("image/png").replace("image/png", "image/octet-stream");  // here is the most important part because if you dont replace you will get a DOM 18 exception.
-      window.location.href=image; // it will save locally
+      window.location.href=image + '.png'; // it will save locally
     });
 
     // Attach the video stream to the video element and autoplay.
